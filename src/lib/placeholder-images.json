@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image-1",
+      "description": "A cozy, sunlit library with shelves full of books.",
+      "imageUrl": "https://images.unsplash.com/photo-1627340066231-bbc5ed33b862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsaWJyYXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcwMjY5NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "library interior"
+    },
+    {
+      "id": "book-cover-1",
+      "description": "Book cover for 'The Midnight Library'",
+      "imageUrl": "https://images.unsplash.com/photo-1711185892320-5ca2641b253e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW50YXN5JTIwYm9va3xlbnwwfHx8fDE3NzAyNzE5MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy book"
+    },
+    {
+      "id": "book-cover-2",
+      "description": "Book cover for 'Dune'",
+      "imageUrl": "https://images.unsplash.com/photo-1762895158802-507fb6d7aa7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY2ktZmklMjBib29rfGVufDB8fHx8MTc3MDI3MTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sci-fi book"
+    },
+    {
+      "id": "book-cover-3",
+      "description": "Book cover for 'Project Hail Mary'",
+      "imageUrl": "https://images.unsplash.com/photo-1646032538629-6b8647ab0761?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3BhY2UlMjBib29rfGVufDB8fHx8MTc3MDI3MTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space book"
+    },
+    {
+      "id": "book-cover-4",
+      "description": "Book cover for 'The Silent Patient'",
+      "imageUrl": "https://images.unsplash.com/photo-1748465414055-81bbb812c8d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXlzdGVyeSUyMGJvb2t8ZW58MHx8fHwxNzcwMTcyNDE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mystery book"
+    },
+    {
+      "id": "book-cover-5",
+      "description": "Book cover for 'Sapiens: A Brief History of Humankind'",
+      "imageUrl": "https://images.unsplash.com/photo-1632038585992-fecf8a0cf59d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoaXN0b3J5JTIwYm9va3xlbnwwfHx8fDE3NzAyNzE5MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "history book"
+    },
+    {
+      "id": "book-cover-6",
+      "description": "Book cover for 'Atomic Habits'",
+      "imageUrl": "https://images.unsplash.com/photo-1769625666327-b4330494c430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZWxmLWhlbHAlMjBib29rfGVufDB8fHx8MTc3MDI3MTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "self-help book"
+    },
+    {
+      "id": "book-cover-7",
+      "description": "Book cover for 'Circe'",
+      "imageUrl": "https://images.unsplash.com/photo-1759376294932-25bf2bfec896?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxteXRob2xvZ3klMjBib29rfGVufDB8fHx8MTc3MDI3MTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mythology book"
+    },
+    {
+      "id": "book-cover-8",
+      "description": "Book cover for 'Where the Crawdads Sing'",
+      "imageUrl": "https://images.unsplash.com/photo-1646032538357-bfc76ccece0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxub3ZlbCUyMGJvb2t8ZW58MHx8fHwxNzcwMjcxOTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "novel book"
+    },
+    {
+      "id": "book-cover-9",
+      "description": "Book cover for 'The Four Winds'",
+      "imageUrl": "https://images.unsplash.com/photo-1760120482338-30b658f397bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoaXN0b3JpY2FsJTIwZmljdGlvbnxlbnwwfHx8fDE3NzAyNzE5MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historical fiction"
+    },
+    {
+      "id": "book-cover-10",
+      "description": "Book cover for 'Educated: A Memoir'",
+      "imageUrl": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiaW9ncmFwaHklMjBib29rfGVufDB8fHx8MTc3MDI3MTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "biography book"
+    },
+    {
+      "id": "book-cover-11",
+      "description": "Book cover for 'The Vanishing Half'",
+      "imageUrl": "https://images.unsplash.com/photo-1746913361326-01c3214c7540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaWN0aW9uJTIwYm9va3xlbnwwfHx8fDE3NzAyNzE5MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fiction book"
+    },
+    {
+      "id": "book-cover-12",
+      "description": "Book cover for 'A Promised Land'",
+      "imageUrl": "https://images.unsplash.com/photo-1684741890382-e13579787ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtZW1vaXIlMjBib29rfGVufDB8fHx8MTc3MDI3MTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "memoir book"
+    }
+  ]
 }
