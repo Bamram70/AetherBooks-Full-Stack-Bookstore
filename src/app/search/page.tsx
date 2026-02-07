@@ -10,7 +10,6 @@ import { BookGrid } from '@/components/book/book-grid';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
-import { Button } from '@/components/ui/button';
 import { refineSearchAction } from '@/lib/actions';
 import { Skeleton } from '@/components/ui/skeleton';
 
@@ -19,23 +18,27 @@ function SearchPageContent() {
   const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const [selectedGenres, setSelectedGenres] = useState<string[]>(() => searchParams.getAll('genres'));
   const [priceRange, setPriceRange] = useState([0, 50]);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(() => searchParams.get('q') || '');
 
+  // Effect to sync state from URL changes
   useEffect(() => {
-    const q = searchParams.get('q') || '';
-    const genreParams = searchParams.getAll('genres');
-    setQuery(q);
-    setSelectedGenres(genreParams);
-    
+    setQuery(searchParams.get('q') || '');
+    setSelectedGenres(searchParams.getAll('genres'));
+  }, [searchParams]);
+
+  // Effect to apply filters when criteria change
+  useEffect(() => {
     const applyFilters = async () => {
         setLoading(true);
-        let booksToFilter = books;
+        let booksToFilter: Book[];
 
-        if (q) {
+        if (query) {
             const allBookTitles = books.map(b => b.title);
-            booksToFilter = await refineSearchAction({ query: q, bookList: allBookTitles });
+            booksToFilter = await refineSearchAction({ query: query, bookList: allBookTitles });
+        } else {
+            booksToFilter = books;
         }
 
         let results = booksToFilter.filter(book => {
@@ -49,7 +52,7 @@ function SearchPageContent() {
     };
 
     applyFilters();
-  }, [searchParams, selectedGenres, priceRange]);
+  }, [query, selectedGenres, priceRange]);
 
   const handleGenreChange = (genre: string, checked: boolean) => {
     setSelectedGenres(prev => 
@@ -82,7 +85,7 @@ function SearchPageContent() {
               <div>
                 <h3 className="font-headline font-semibold text-lg mb-4">Filter by Price</h3>
                 <Slider
-                  defaultValue={[0, 50]}
+                  value={priceRange}
                   max={50}
                   step={1}
                   onValueChange={setPriceRange}
